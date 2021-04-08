@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista h1 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #000000;
+}
+
+.lista ol {
+  list-style: none;
+  text-align: center;
+}
+
+.lista ol li {
+  font-family: sans-serif;
+  margin: 5px 0;
+}
+
+
+.button {
+  margin: 10px 0;
+}
+
+.button button {
+  padding: 7px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.button button:first-child {
+  color: green;
+  background-color: #fff;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+.button button:last-child {
+  color: red;
+  background-color: #fff;
+  border: 1px solid red;
+  border-radius: 5px;
+}

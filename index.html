@@ -9,11 +9,18 @@
 </head>
 <body>
   <div id="root">
-    <ol>
-      <li v-for="(mail, i) in mails">{{ indirizzo[i] }}</li>
-    </ol>
-    <button @click="indirizzoEmail">Genera mail</button>
-    <button @click="clearMail">Pulisci le mail</button>
+    <div class="container">
+      <div class="lista">
+        <h1>Lista di email</h1>
+        <ol>
+          <li v-for="(mail, i) in mails">{{ indirizzo[i] }}</li>
+        </ol>
+      </div>
+      <div class="button">
+        <button @click="indirizzoEmail">New mail</button>
+        <button @click="clearMail">Delete mail</button>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>

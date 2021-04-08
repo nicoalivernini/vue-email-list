@@ -16,6 +16,7 @@ var app = new Vue ({
           this.indirizzo.push(response.data.response)
         });
       }
+
       //console.log(this.indirizzo);
     },
 
