@@ -13,7 +13,7 @@
       <div class="lista">
         <h1>Lista di email</h1>
         <ol>
-          <li v-for="indirizzo in indirizzoMail">{{ indirizzo }}</li>
+          <li v-for="indirizzo in indirizzoMail" v-if="indirizzoMail.length == 10">{{ indirizzo }}</li>
         </ol>
       </div>
       <div class="button">
