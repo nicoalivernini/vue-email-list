@@ -9,8 +9,14 @@
 </head>
 <body>
   <div id="root">
-
+    <ul>
+      <li v-for="(mail, i) in mails">{{ indirizzo[i] }}</li>
+    </ul>
+    <button @click="indirizzoEmail">Genera mail</button>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue" charset="utf-8"></script>
   <script src="./assets/js/main.js" charset="utf-8"></script>
 </body>
 </html>
