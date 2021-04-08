@@ -13,11 +13,11 @@
       <div class="lista">
         <h1>Lista di email</h1>
         <ol>
-          <li v-for="(mail, i) in mails">{{ indirizzo[i] }}</li>
+          <li v-for="indirizzo in indirizzoMail">{{ indirizzo }}</li>
         </ol>
       </div>
       <div class="button">
-        <button @click="indirizzoEmail">New mail</button>
+        <button @click="newMail">New mail</button>
         <button @click="clearMail">Delete mail</button>
       </div>
     </div>
