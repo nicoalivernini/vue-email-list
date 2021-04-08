@@ -21,6 +21,5 @@ var app = new Vue ({
       this.indirizzoMail = [];
     }
 
-
   }//Chiusura Methods
 })//Chiusura Vue
